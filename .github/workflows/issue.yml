@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-slim
     steps:
       - name: get output info
-        run: "${{toJSON(github.event)}}"
+        run: echo "${{toJSON(github.event)}}"
