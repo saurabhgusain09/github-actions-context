@@ -1,0 +1,8 @@
+name: issue event
+on: issues
+jobs:
+  output-info:
+    runs-on: ubuntu-slim
+    steps:
+      - name: get output info
+        run: "${{toJSON(github.event)}}"
